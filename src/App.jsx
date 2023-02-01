@@ -38,6 +38,20 @@ function App() {
     <div className="card">
         <Profile />
         <Icons />
+        <Icon1 
+        size={100}/>
+    </div>
+  )
+}
+
+function Icon1({size}){
+  return (
+    <div id="icon-box">
+      textContent=AiFillHtml5
+      display: flex;
+      padding-left: 7.5px;
+      padding-right: 7.5px;
+      font-size: 28px;
     </div>
   )
 }
