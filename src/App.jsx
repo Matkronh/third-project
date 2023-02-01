@@ -7,6 +7,18 @@ import { DiReact } from 'react-icons/di'
 import { SiCss3 } from 'react-icons/si'
 import { IoLogoJavascript } from 'react-icons/io'
 
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="card">
+        <Profile />
+        <Icons />
+        {/* <Icon1 
+        size={100}/> */}
+    </div>
+  )
+}
 
 function Profile(){
   return (
@@ -31,20 +43,7 @@ function Icons(){
   )
 }
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="card">
-        <Profile />
-        <Icons />
-        <Icon1 
-        size={100}/>
-    </div>
-  )
-}
-
-function Icon1({size}){
+/* function Icon1({size}){
   return (
     <div id="icon-box">
       textContent=AiFillHtml5
@@ -54,6 +53,6 @@ function Icon1({size}){
       font-size: 28px;
     </div>
   )
-}
+} */
 
 export default App
