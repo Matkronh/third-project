@@ -5,19 +5,19 @@ import { DiReact } from 'react-icons/di'
 import { SiCss3 } from 'react-icons/si'
 import { IoLogoJavascript } from 'react-icons/io'
 
-function App() {
+function App(props) {
 
   return (
     <div className="card">
         <Profile 
-        imgSrc="https://github.com/Matkronh/third-project/blob/master/img/doggi.jpg?raw=true" 
-        name="John Dog" 
-        short="Dog Extraordinaire"
+        imgSrc={props.imgSrc} 
+        name={props.name} 
+        short={props.short}
         >
-        <div className='item'><AiFillHtml5 /></div>
-        <div className='item'><DiReact /></div>
-        <div className='item'><SiCss3 /></div>
-        <div className='item'><IoLogoJavascript /></div>
+        <div className='item'><AiFillHtml5 size={30}/></div>
+        <div className='item'><DiReact size={30}/></div>
+        <div className='item'><SiCss3 size={30}/></div>
+        <div className='item'><IoLogoJavascript size={30}/></div>
       </Profile>
     </div>
   )
