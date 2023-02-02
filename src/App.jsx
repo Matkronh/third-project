@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 
 import { AiFillHtml5 } from 'react-icons/ai';
@@ -8,51 +6,36 @@ import { SiCss3 } from 'react-icons/si'
 import { IoLogoJavascript } from 'react-icons/io'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="card">
-        <Profile />
-        <Icons />
-        {/* <Icon1 
-        size={100}/> */}
+        <Profile 
+        imgSrc="https://github.com/Matkronh/third-project/blob/master/img/doggi.jpg?raw=true" 
+        name="John Dog" 
+        short="Dog Extraordinaire"
+        >
+        <div className='item'><AiFillHtml5 /></div>
+        <div className='item'><DiReact /></div>
+        <div className='item'><SiCss3 /></div>
+        <div className='item'><IoLogoJavascript /></div>
+      </Profile>
     </div>
   )
 }
 
-function Profile(){
+function Profile(props){
   return (
       <div>
-        <img id="resizeMe" src="https://github.com/Matkronh/third-project/blob/master/img/doggi.jpg?raw=true"></img>
+        <img id="resizeMe" src={props.imgSrc}></img>
         <br />
-        <text>Name: John Dog</text>
+        <text>Name: {props.name}</text>
         <br />
-        <text>Short: Web Developer extraordinaire</text>
+        <text>Short: {props.short}</text>
+        <div id="icon-box">
+          {props.children}
+        </div>
       </div>
   )
 }
-
-function Icons(){
-  return (
-    <div id="icon-box">
-      <div className='item'><AiFillHtml5 /></div>
-      <div className='item'><DiReact /></div>
-      <div className='item'><SiCss3 /></div>
-      <div className='item'><IoLogoJavascript /></div>
-    </div>
-  )
-}
-
-/* function Icon1({size}){
-  return (
-    <div id="icon-box">
-      textContent=AiFillHtml5
-      display: flex;
-      padding-left: 7.5px;
-      padding-right: 7.5px;
-      font-size: 28px;
-    </div>
-  )
-} */
 
 export default App
