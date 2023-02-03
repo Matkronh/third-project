@@ -77,10 +77,10 @@ function App(props){
           name="Joe ExcitedDog"
           short="High energy doggie"
         >
-          <div className='item'><AiFillHtml5 size={30}/></div>
-          <div className='item'><DiReact size={30}/></div>
-          <div className='item'><SiCss3 size={30}/></div>
-          <div className='item'><IoLogoJavascript size={30}/></div>
+          <div className={styles.item}><AiFillHtml5 size={30}/></div>
+          <div className={styles.item}><DiReact size={30}/></div>
+          <div className={styles.item}><SiCss3 size={30}/></div>
+          <div className={styles.item}><IoLogoJavascript size={30}/></div>
         </Profile>
 
         <Profile 
