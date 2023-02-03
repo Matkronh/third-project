@@ -1,10 +1,11 @@
-import './App.css'
+import './App.module.css'
 
 import { AiFillHtml5 } from 'react-icons/ai';
 import { DiReact } from 'react-icons/di'
 import { SiCss3 } from 'react-icons/si'
 import { IoLogoJavascript } from 'react-icons/io'
 import Title from './components/Title'
+import styles from './App.module.css'
 
 function App(props){
   return (
@@ -12,17 +13,17 @@ function App(props){
 
         <Title />
 
-        <div id="subroot">
+        <div className={subroot}>
 
         <Profile 
           imgSrc="https://github.com/Matkronh/third-project/blob/master/img/doggi.jpg?raw=true"
           name="John Dog"
           short="Your avrage doggy"
         >
-          <div className='item'><AiFillHtml5 size={30}/></div>
-          <div className='item'><DiReact size={30}/></div>
-          <div className='item'><SiCss3 size={30}/></div>
-          <div className='item'><IoLogoJavascript size={30}/></div>
+          <div className={styles.item}><AiFillHtml5 size={30}/></div>
+          <div className={styles.item}><DiReact size={30}/></div>
+          <div className={styles.item}><SiCss3 size={30}/></div>
+          <div className={styles.item}><IoLogoJavascript size={30}/></div>
         </Profile>
 
         <Profile 
@@ -30,10 +31,10 @@ function App(props){
           name="Jane CuteDog"
           short="WoW. Much Cute Dog"
         >
-          <div className='item'><AiFillHtml5 size={30}/></div>
-          <div className='item'><DiReact size={30}/></div>
-          <div className='item'><SiCss3 size={30}/></div>
-          <div className='item'><IoLogoJavascript size={30}/></div>
+          <div className={styles.item}><AiFillHtml5 size={30}/></div>
+          <div className={styles.item}><DiReact size={30}/></div>
+          <div className={styles.item}><SiCss3 size={30}/></div>
+          <div className={styles.item}><IoLogoJavascript size={30}/></div>
         </Profile>
 
         <Profile 
@@ -41,10 +42,10 @@ function App(props){
           name="Timothy AngryDog"
           short="Such an angry doggie"
         >
-          <div className='item'><AiFillHtml5 size={30}/></div>
-          <div className='item'><DiReact size={30}/></div>
-          <div className='item'><SiCss3 size={30}/></div>
-          <div className='item'><IoLogoJavascript size={30}/></div>
+          <div className={styles.item}><AiFillHtml5 size={30}/></div>
+          <div className={styles.item}><DiReact size={30}/></div>
+          <div className={styles.item}><SiCss3 size={30}/></div>
+          <div className={styles.item}><IoLogoJavascript size={30}/></div>
         </Profile>
 
         <Profile 
@@ -52,10 +53,10 @@ function App(props){
           name="Jeffrey SurprisedDog"
           short="Wow! This dog is surprised!"
         >
-          <div className='item'><AiFillHtml5 size={30}/></div>
-          <div className='item'><DiReact size={30}/></div>
-          <div className='item'><SiCss3 size={30}/></div>
-          <div className='item'><IoLogoJavascript size={30}/></div>
+          <div className={styles.item}><AiFillHtml5 size={30}/></div>
+          <div className={styles.item}><DiReact size={30}/></div>
+          <div className={styles.item}><SiCss3 size={30}/></div>
+          <div className={styles.item}><IoLogoJavascript size={30}/></div>
         </Profile>
 
         <Profile 
@@ -63,10 +64,10 @@ function App(props){
           name="Snoopi HighDog"
           short="what?"
         >
-          <div className='item'><AiFillHtml5 size={30}/></div>
-          <div className='item'><DiReact size={30}/></div>
-          <div className='item'><SiCss3 size={30}/></div>
-          <div className='item'><IoLogoJavascript size={30}/></div>
+          <div className={styles.item}><AiFillHtml5 size={30}/></div>
+          <div className={styles.item}><DiReact size={30}/></div>
+          <div className={styles.item}><SiCss3 size={30}/></div>
+          <div className={styles.item}><IoLogoJavascript size={30}/></div>
         </Profile>
 
         <Profile 
@@ -85,10 +86,10 @@ function App(props){
           name="John HotDog"
           short="Many Calories"
         >
-          <div className='item'><AiFillHtml5 size={30}/></div>
-          <div className='item'><DiReact size={30}/></div>
-          <div className='item'><SiCss3 size={30}/></div>
-          <div className='item'><IoLogoJavascript size={30}/></div>
+          <div className={styles.item}><AiFillHtml5 size={30}/></div>
+          <div className={styles.item}><DiReact size={30}/></div>
+          <div className={styles.item}><SiCss3 size={30}/></div>
+          <div className={styles.item}><IoLogoJavascript size={30}/></div>
         </Profile>
 
       </div>
@@ -101,13 +102,13 @@ function App(props){
 
 function Profile(props){
   return (
-      <div className="card">
-        <img id="resizeMe" src={props.imgSrc}></img>
+      <div className={styles.card}>
+        <img className={styles.resizeMe} src={props.imgSrc}></img>
         <br />
         <text>Name: {props.name}</text>
         <br />
         <text>Short: {props.short}</text>
-        <div id="icon-box">
+        <div className={icon-box}>
           {props.children}
         </div>
       </div>
