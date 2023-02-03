@@ -1,4 +1,4 @@
-import './App.module.css'
+/* import './App.module.css' */
 
 import { AiFillHtml5 } from 'react-icons/ai';
 import { DiReact } from 'react-icons/di'
@@ -13,7 +13,7 @@ function App(props){
 
         <Title />
 
-        <div className={subroot}>
+        <div className={styles.subroot}>
 
         <Profile 
           imgSrc="https://github.com/Matkronh/third-project/blob/master/img/doggi.jpg?raw=true"
@@ -108,7 +108,7 @@ function Profile(props){
         <text>Name: {props.name}</text>
         <br />
         <text>Short: {props.short}</text>
-        <div className={icon-box}>
+        <div className={styles.iconbox}>
           {props.children}
         </div>
       </div>
