@@ -1,7 +1,5 @@
 import styles from './Title.module.css'
 
-console.log(styles)
-
 function Title(){
     return (
     <div className={styles.divtest}>

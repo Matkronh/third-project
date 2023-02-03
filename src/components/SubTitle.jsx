@@ -11,4 +11,4 @@ function SubTitle(){
 }
 
 
-export default Title
+export default SubTitle

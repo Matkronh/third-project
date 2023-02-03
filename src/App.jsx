@@ -5,6 +5,7 @@ import { DiReact } from 'react-icons/di'
 import { SiCss3 } from 'react-icons/si'
 import { IoLogoJavascript } from 'react-icons/io'
 import Title from './components/Title'
+import SubTitle from './components/SubTitle'
 import styles from './App.module.css'
 
 function App(props){
@@ -12,6 +13,7 @@ function App(props){
       <div>
 
         <Title />
+        <SubTitle />
 
         <div className={styles.subroot}>
 
